@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    --primary-bg: #1b1b1b;
+    --secondary-bg: #252525;
+    --accent-color: #f5a623;
+    --text-light: #ffffff;
+    --text-dark: #e0e0e0;
+    --highlight-color: #007034;
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), 
+                url('image/Announcements.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-top: 10px;
+}
+
+/* Main Sections */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--secondary-bg);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+/* About Section */
+.about-section p {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+/* Timeline Section */
+.timeline {
+    text-align: left;
+    padding: 40px;
+    border-left: 5px solid var(--accent-color);
+}
+
+.timeline-content {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.timeline-content li {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    color: var(--text-dark);
+}
+
+.timeline-content li strong {
+    color: var(--highlight-color);
+}
+
+.timeline-content li::before {
+    content: "•";
+    color: var(--accent-color);
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Books Section */
+.books ul {
+    list-style: none;
+}
+
+.books li {
+    font-size: 1.3rem;
+    padding: 10px;
+    border-bottom: 1px solid var(--highlight-color);
+}
+
+.books li strong {
+    color: var(--highlight-color);
+}
+
+/* Quotes Section */
+.quote-section {
+    background-color: var(--highlight-color);
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    color: var(--text-light);
+}
+
+.quote-section blockquote {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+/* Awards Section */
+.awards ul {
+    list-style: none;
+}
+
+.awards li {
+    font-size: 1.3rem;
+    padding: 10px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.awards li strong {
+    color: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--highlight-color);
+    margin-top: 20px;
+}
+
+.footer a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition-speed);
+}
+
+.footer a:hover {
+    color: var(--accent-color);
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
